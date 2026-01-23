@@ -1,6 +1,6 @@
 # Guia de Contribuição
 
-## 🚀 Como Começar
+## Como Começar
 
 ### 1. Clone o Repositório
 ```bash
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 2. Extraia para uma pasta (ex: `data/cocoa_dataset`)
 3. Atualize o caminho no notebook
 
-## 📝 Fluxo de Trabalho Git
+## Fluxo de Trabalho Git
 
 ### Branches
 - `main`: Código estável e testado
@@ -61,7 +61,7 @@ git push origin feature/sua-feature
 3. Descreva as mudanças no PR
 4. Solicite revisão de um colega
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 projeto/
@@ -72,7 +72,7 @@ projeto/
 └── README.md            # Documentação principal
 ```
 
-## 🧪 Executando Experimentos
+## Executando Experimentos
 
 ### No Google Colab
 1. Abra o notebook no Colab
@@ -85,7 +85,7 @@ projeto/
 jupyter notebook notebooks/
 ```
 
-## ✅ Checklist Antes de Commit
+## Checklist Antes de Commit
 
 - [ ] Código funciona sem erros
 - [ ] Notebooks têm outputs limpos ou relevantes
@@ -93,7 +93,7 @@ jupyter notebook notebooks/
 - [ ] README atualizado (se aplicável)
 - [ ] Arquivos grandes NÃO incluídos (modelos .pkl, datasets)
 
-## 🤝 Divisão de Tarefas
+## Divisão de Tarefas
 
 | Membro | Responsabilidade |
 |--------|------------------|
@@ -102,7 +102,7 @@ jupyter notebook notebooks/
 | Ícaro | Treinamento SVM |
 | Priscila | Avaliação e relatório |
 
-## 📞 Comunicação
+## Comunicação
 
 - Issues do GitHub para bugs e features
 - PRs para revisão de código
