@@ -181,8 +181,8 @@ cd Projeto_Machine_Learning_Aplicacao_02
 # Instale as dependências
 pip install -r requirements.txt
 
-# Execute o notebook principal
-jupyter notebook notebooks/
+# Execute os notebooks na ordem:
+# 01 → 02 → 03 → 04
 ```
 
 ## Referências
