@@ -1,0 +1,44 @@
+name: Relatorio de Autoria
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  autoria:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Gerar relatorio de contribuicao
+        run: |
+          echo "# Relatorio de Autoria (Git)" > AUTORIA.md
+          echo "" >> AUTORIA.md
+          echo "## Notebooks" >> AUTORIA.md
+          echo "" >> AUTORIA.md
+
+          for f in notebooks/*.ipynb; do
+            echo "### $f" >> AUTORIA.md
+            git log --follow --pretty=format:"- %an (%ae) | %ad | %s" --date=short -- "$f" >> AUTORIA.md || true
+            echo "" >> AUTORIA.md
+            echo "" >> AUTORIA.md
+          done
+
+          echo "## Codigo (src/)" >> AUTORIA.md
+          echo "" >> AUTORIA.md
+          for f in src/*.py; do
+            echo "### $f" >> AUTORIA.md
+            git log --follow --pretty=format:"- %an (%ae) | %ad | %s" --date=short -- "$f" >> AUTORIA.md || true
+            echo "" >> AUTORIA.md
+            echo "" >> AUTORIA.md
+          done
+
+      - name: Upload do relatorio
+        uses: actions/upload-artifact@v4
+        with:
+          name: relatorio-autoria
+          path: AUTORIA.md
