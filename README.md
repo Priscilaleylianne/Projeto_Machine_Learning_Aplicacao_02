@@ -1,21 +1,21 @@
-# 🍫 Classificação Inteligente de Sementes de Cacau
+# Classificação Inteligente de Sementes de Cacau
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://tensorflow.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.x-green.svg)](https://scikit-learn.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
 Trabalho Pedagógico Complementar da disciplina **Machine Learning Aplicado 2** da Universidade do Estado do Amazonas (UEA).
 
 O projeto implementa um sistema de classificação de sementes de cacau no teste de corte utilizando **Transfer Learning** com CNNs pré-treinadas como extratoras de características e **Support Vector Machines (SVM)** como classificadores.
 
-### 🎯 Objetivo
+### Objetivo
 
 Classificar automaticamente amêndoas de cacau em 14 classes distintas, seguindo a metodologia de CNNs como extratoras de features + SVMs classificadoras, conforme proposto por [Sarkar et al. (2018)](https://www.packtpub.com/product/hands-on-transfer-learning-with-python/9781788831307).
 
-## 👥 Equipe
+## Equipe
 
 | Nome | GitHub |
 |------|--------|
@@ -24,7 +24,7 @@ Classificar automaticamente amêndoas de cacau em 14 classes distintas, seguindo
 | Ícaro Guimarães Canto | [@IcaroCanto](https://github.com/IcaroCanto) |
 | Priscila Leylianne da Silva Gonçalves | [@Priscilaleylianne](https://github.com/Priscilaleylianne) |
 
-## 📊 Base de Dados
+## Base de Dados
 
 Utilizamos a base de dados **Cut-Test-Classified Cocoa Beans** ([Santos et al., 2019](https://www.sciencedirect.com/science/article/pii/S2352340919302331)):
 
@@ -32,7 +32,7 @@ Utilizamos a base de dados **Cut-Test-Classified Cocoa Beans** ([Santos et al., 
 - **Classes:** 14 (100 imagens por classe)
 - **Categorias:** Aglutinada, Quebradiça, Compartimentalizada (5 cores), Achatada, Embolorada, Chocha (5 cores)
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -68,7 +68,7 @@ Utilizamos a base de dados **Cut-Test-Classified Cocoa Beans** ([Santos et al., 
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 Projeto_Machine_Learning_Aplicacao_02/
@@ -97,7 +97,7 @@ Projeto_Machine_Learning_Aplicacao_02/
 └── 📄 LICENSE
 ```
 
-## 🔬 Metodologia
+## Metodologia
 
 ### 1. Análise Exploratória
 - Verificação da distribuição de classes (balanceada: 100/classe)
@@ -129,7 +129,7 @@ param_grid = {
 - **PCA:** Redução de dimensionalidade (99% variância)
 - **Ensemble Stacking:** SVM + Logistic Regression como meta-learner
 
-## 📈 Resultados
+## Resultados
 
 ### Métricas do Melhor Modelo
 
@@ -158,7 +158,7 @@ param_grid = {
 
 > **Nota:** A diferença de ~12% é esperada e documentada na literatura. CNNs com fine-tuning específico para o domínio superam consistentemente abordagens de transfer learning com classificadores tradicionais ([Russakovsky et al., 2015](https://arxiv.org/abs/1409.0575)).
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 ```bash
@@ -185,13 +185,13 @@ pip install -r requirements.txt
 jupyter notebook notebooks/
 ```
 
-## 📚 Referências
+## Referências
 
 - Santos, F., Palmeira, E., and Jesus, G. (2019). An Image Dataset of Cut-Test-Classified Cocoa Beans. *Data in Brief*, 24:103916.
 - Malcher, D. and Guedes, E. (2022). Classificação inteligente do teste de corte do cacau com redes neurais convolucionais profundas. *Anais do XIII WCAMA*, pages 31-40.
 - Sarkar, D., Bali, R., and Ghosh, T. (2018). *Hands-On Transfer Learning with Python*. Packt Publishing.
 
-## 📄 Licença
+## Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
