@@ -195,6 +195,17 @@ jupyter notebook notebooks/
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
+## Integração Contínua e Autoria
+
+Este projeto utiliza GitHub Actions para:
+
+- Validação automática da estrutura do repositório
+- Instalação das dependências em ambiente limpo
+- Geração automática de relatório de autoria por arquivo
+
+Os workflows podem ser consultados na aba **Actions** do repositório.
+
+
 ---
 
 <p align="center">
